@@ -4,7 +4,7 @@ FROM alpine:latest
 COPY rootfs /
 
 RUN set -xe && \
-    apk add --no-cache tzdata bash lftp && \
+    apk add --no-cache tzdata bash lftp openssl && \
     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     apk del tzdata && \
     chmod +x /backup.sh && \
