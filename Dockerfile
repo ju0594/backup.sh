@@ -4,10 +4,9 @@ FROM alpine:latest
 COPY rootfs /
 
 RUN set -xe && \
-    apk add --no-cache tzdata && \
+    apk add --no-cache tzdata bash lftp && \
     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     apk del tzdata && \
-    wget --no-check-certificate https://github.com/teddysun/across/raw/master/backup.sh -P / && \
     chmod +x /backup.sh && \
     chmod +x /start.sh
 
