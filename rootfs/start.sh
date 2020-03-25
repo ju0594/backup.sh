@@ -1,7 +1,7 @@
 #! /bin/sh
 #
 
-[[ ! -f /backup.sh/backup.sh ]] && cp /backup.sh /backup.sh/backup.sh
-[[ ! -f /backup.sh/crontabs/root ]] && cp /crontab /backup.sh/crontabs/root
+[[ ! -f /backup/backup.sh ]] && cp /backup.sh /backup/backup.sh
+[[ ! -f /backup/crontabs/root ]] && cp /crontab /backup/crontabs/root
 
-crond -f -S -l 0 -c /backup.sh/crontabs
+crond -f -S -l 0 -c /backup/crontabs
