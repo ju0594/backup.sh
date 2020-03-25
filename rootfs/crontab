@@ -7,4 +7,4 @@
 0       5       1       *       *       run-parts /etc/periodic/monthly
 
 # run py
-0       2       *       *       *       /backup.sh/backup.sh
+0       2       *       *       *       /backup/backup.sh
