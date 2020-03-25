@@ -14,10 +14,13 @@ From teddysun
 	  
 "path to backup" 选个主机上的目录映射
 
-配置在该映射目录里的backup.sh里进行修改
-参考 https://teddysun.com/469.html
+定时任务
+映射目录/crontabs/root
 
-定时任务在 映射目录/crontabs/root 内修改
+备份参数
+映射目录/backup.sh
+
+参考 https://teddysun.com/469.html
 
 备份文件的解密命令如下：
 
