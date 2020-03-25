@@ -54,7 +54,7 @@ BACKUP[0]=""
 # Number of days to store daily local backups (default 7 days)
 LOCALAGEDAILIES="7"
 
-# Delete Googole Drive's & FTP server's remote file flag (true: delete, false: not delete)
+# Delete FTP server's remote file flag (true: delete, false: not delete)
 DELETE_REMOTE_FILE_FLG=true
 
 # Upload to FTP server flag (true: upload, false: not upload)
