@@ -231,7 +231,6 @@ clean_up_files() {
             if [[ ${FILEAGE} -gt ${LOCALAGEDAILIES} ]]; then
                 rm -f ${f}
                 log "Old backup file name: ${f} has been deleted"
-                delete_gdrive_file ${f}
                 delete_ftp_file ${f}
             fi
         fi
